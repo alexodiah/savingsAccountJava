@@ -1,0 +1,42 @@
+//This Program is a Basic Calculator, Using Classes with Java
+public class Calculator {
+  public Calculator() {
+  }
+  //Adds integers and returns the added two figures
+  public int add(int a, int b)
+    {
+     return  a + b;
+    }
+  //Subtracts integers and returns the subtracted value
+  public int subtract(int a, int b) 
+  {
+    return a - b;
+      }
+  //Multiplies integers and returns the multiplied value
+  public int multiply( int a, int b)
+  {
+    return a * b;
+  }
+  //Divides two integers and returns the divided value
+  public int divide(int a, int b)
+  {
+    return a / b;
+  }
+  // Extracts the integer value difference form the two amounts divided
+  public int mudulo( int a, int b)
+  {
+  return a % b;
+  }
+  
+    public static void main (String[] args) {
+  Calculator myCalculator = new Calculator();  
+      // System.out.println(add(10,2));
+System.out.println(myCalculator.add(10,12));
+System.out.println(myCalculator.subtract(45,11));
+      
+      
+    
+  }
+}
+
+
