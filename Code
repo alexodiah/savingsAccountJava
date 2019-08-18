@@ -1,27 +1,30 @@
+//This code is a basic structure of a savings Account
 public class SavingsAccount {
-  
+  // Declaration of the balance integer
   int balance;
   
   public SavingsAccount(int initialBalance){
     balance = initialBalance;
   }
-  
+  // Check Balance function
     public void checkBalance(){
     System.out.println("Hello!");
     System.out.println("Your balance is " + balance);
   }
+  //Deposit funciton
   public void deposit(int amountToDeposit){
    balance = amountToDeposit + balance;
     System.out.println("You just deposited " +amountToDeposit);
   }
   
+  //Withdrawal function
   public int withdraw(int amountToWithdraw){
     balance = balance - amountToWithdraw;
     System.out.println("You have withdrew " + amountToWithdraw);
     return amountToWithdraw;
     
   }
-  
+  //Executions
   public static void main(String[] args){
     SavingsAccount savings = new SavingsAccount(2000);
     
